@@ -34,8 +34,8 @@ public class PracticeOperators {
         z +=5;//z=z+5
         //Unary operators
         System.out.println(z);
-        System.out.println(z++);
-        System.out.println(++z);
+        System.out.println("post"+z++);
+        System.out.println(++z+"pre");
         System.out.println(z);
         System.out.println(z--);
         System.out.println(--z);
