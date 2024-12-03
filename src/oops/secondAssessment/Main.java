@@ -3,7 +3,7 @@ package oops.secondAssessment;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws DuplicateTrackException {
 
         Scanner sc = new Scanner(System.in);
         User user = new User("Anandu");

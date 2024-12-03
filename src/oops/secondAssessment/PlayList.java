@@ -20,14 +20,11 @@ public class PlayList {
     }
 
     //adding track
-    public void addTrack(Track track) {
-        try {
-            if (tracks.contains(track)) {
-                throw new DuplicateTrackException("Track already exists!!!!");
-            }
-        }catch (DuplicateTrackException e) {
-            System.out.println(e.getMessage());
+    public void addTrack(Track track) throws DuplicateTrackException {
+        if (tracks.contains(track)) {
+            throw new DuplicateTrackException("Track already exists in the playlist.");
         }
+        tracks.add(track);
     }
 
     //Removing track
